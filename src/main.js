@@ -4,7 +4,14 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-class 
+// Vue.prototype.$bus=new Vue({});
+class Bus{
+  constructor(){
+    
+  }
+}
+
+
 Vue.prototype.$dispatch=function(eventName,data){
   //向上传递一直获取$parent;
   let parent=this.$parent;
