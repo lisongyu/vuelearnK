@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ul>
+      <li> <router-link to="tochild">父传子组件</router-link></li>
+       <li> <router-link to="toparent">子传父组件</router-link></li>
+        <li> <router-link to="todownmore">传给子孙节点</router-link></li>
+        <li> <router-link to="toupfn">不停向上传递</router-link></li>
+    </ul>
+    
+     <router-view/>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
   components: {
-    HelloWorld
+   
   }
 }
 </script>
