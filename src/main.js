@@ -5,11 +5,7 @@ import router from './router'
 Vue.config.productionTip = false
 
 // Vue.prototype.$bus=new Vue({});
-class Bus{
-  constructor(){
-    
-  }
-}
+
 
 
 Vue.prototype.$dispatch=function(eventName,data){
